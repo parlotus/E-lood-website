@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">      
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-lOOD CONSULTING ENGINEERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="icon" type="image/png" href="img/logo-Elood0.png">
+   <link rel="stylesheet" href="styles/reset.css">
+   <link rel="stylesheet" href="styles/font.css">
+   <link rel="stylesheet" href="styles/app.css">
+   <link rel="stylesheet" href="styles/responsive.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+   <meta http-equiv="Content-Type" content="text/css">
+   
+</head>
+<style>
+
+
+    .contact-header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
+    .contact-details div { text-align: center; }
+    .contact-details div a,
+    .contact-details div p { text-decoration: none; color: #555; }
+    form.contact-form {
+      max-width: 600px;
+      margin: 0 auto 4rem;
+      padding: 2rem;
+      background: #fafafa;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: grid;
+      gap: 1rem;
+    }
+    form.contact-form input,
+    form.contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form.contact-form button {
+      padding: 1rem;
+      background: #005f6b;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form.contact-form button:hover {
+      background: #004d57;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 2rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .contact-details { flex-direction: column; gap: 1.5rem; }
+      .contact-header h1 { font-size: 2.5rem; }
+    }
+</style>
+<body class="contact-backgraund">
+
+  <!-- Header -->
+    <header class="header">
+    <nav class="navbar">
+      <ul class="menu">
+        <li class="menu_item"><a class="menu_link" href="index.html">Home</a></li>
+        <li class="menu_item"><a class="menu_link" href="department.html">Department</a></li>
+         <li class="menu_item"><a class="menu_link" href="project.html">Projects</a></li> 
+        <li class="menu_item">
+          <a class="menu_link" href="index.html"> <img class="logoimag" src="img/svg/logoElood.svg" alt="E-lood Logo"/></a></li>
+        <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
+         <li class="menu_item"><a class="menu_link" href="portfolio.html">Portfolio</a></li>
+         <li class="menu_item"><a class="menu_link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+
+  <!-- Main -->
+  
+  
+
+        <section class="contact-section">
+   <div class="contact-container">
+  
+  <!-- سمت چپ اطلاعات تماس -->
+  <div class="contact-info">
+   
+    <p>Tel : +98 21 8878 18 12, <br>+9821 8885 18 97<br>Fax: +98 21 03 97</p>
+
+    
+    <p>Email: info@elood.com</p>
+
+   
+    <p>address: Unit 3, 3rd Floor,<br>Nasseri Str.,Valiasr Str.,<br>Tehran - Iran</p>
+  </div>
+
+  <!-- سمت راست فرم تماس -->
+  <form action="https://formsubmit.co/parlotus@yahoo.com" method="POST">
+    <h2 class="contact-subtitle">Get in touch</h2>
+
+    <div class="name-fields">
+      <input type="text" name="first_name" placeholder="First" required>
+      <input type="text" name="last_name" placeholder="Last" required>
+    </div>
+
+    <div class="email-phone">
+      <input type="email" name="email" placeholder="Email address" required>
+      <input type="text" name="phone" placeholder="Phone number">
+    </div>
+
+    <textarea name="message" placeholder="Message" rows="6" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+</div>
+
+</section>
+
+    <footer class="footer">
+    <div class="footer-content">
+      
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="department.html">Department</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+   <div class="footer-bottom">
+      <p>© 2025 E‑lOOD Consulting Engineers. designed by parlotusdesign.</p>
+    </div>
+  </footer>
+    <script>
+window.addEventListener("load", () => {
+  document.querySelector(".contact-backgraund").classList.add("loaded");
+});
+</script>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">      
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-lOOD CONSULTING ENGINEERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="icon" type="image/png" href="img/logo-Elood0.png">
+   <link rel="stylesheet" href="styles/reset.css">
+   <link rel="stylesheet" href="styles/font.css">
+   <link rel="stylesheet" href="styles/app.css">
+   <link rel="stylesheet" href="styles/responsive.css">
+   <meta http-equiv="Content-Type" content="text/css">
+   
+</head>
+<body>
+   
+    
+        <section class="sec2"> 
+            <div class="slideshow-container">
+  <img src="img/Banner 1.jpg" class="slide active">
+  <img src="img/Banner 2.jpg" class="slide">
+  <img src="img/Banner 3.jpg" class="slide">
+  <img src="img/Banner 4.jpg" class="slide">
+</div>
+
+            
+    
+  <header class="header">
+    <nav class="navbar">
+      <ul class="menu">
+        <li class="menu_item"><a class="menu_link" href="index.html">Home</a></li>
+        <li class="menu_item"><a class="menu_link" href="department.html">Department</a></li>
+         <li class="menu_item"><a class="menu_link" href="project.html">Projects</a></li> 
+        <li class="menu_item">
+          <a class="menu_link" href="index.html"> <img class="logoimag" src="img/svg/logoElood.svg" alt="E-lood Logo"/></a></li>
+        <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
+         <li class="menu_item"><a class="menu_link" href="portfolio.html">Portfolio</a></li>
+         <li class="menu_item"><a class="menu_link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="wrapperhome_title">E-lOOD</p>
+            <h1 class="wrapperhome__subtitle">CONSULTING ENGINEERS</h1>
+  </header>
+
+</section>
+<script>
+  
+
+     
+  const slides = document.querySelectorAll('.slide');
+  let slideIndex = 0; // شروع از بنر دوم (index = 1)
+  let firstDelay = true;
+
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[slideIndex].classList.add('active');
+
+  function showSlides() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add('active');
+
+    // فقط یک بار delay بیشتر برای اولین اسلاید
+    clearInterval(interval);
+    const delay = firstDelay ? 8000 : 6000;
+    firstDelay = false;
+    interval = setInterval(showSlides, delay);
+  }
+
+  let interval = setInterval(showSlides, 6000);
+  
+  
+  
+  if (localStorage.getItem("eload_visited")) {
+    document.documentElement.classList.add("fade-in");
+
+    window.addEventListener("load", () => {
+      // کم‌کم نشون بده
+      setTimeout(() => {
+        document.documentElement.classList.add("visible");
+      }, 100);
+    });
+  } else {
+    // اولین بار → انتقال به لودر
+    window.location.href = "loader.html";
+  }
+  
+ 
+</script>
+
+
+
+</body>
+</html>

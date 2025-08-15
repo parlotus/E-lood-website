@@ -1,0 +1,113 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-lOOD CONSULTING ENGINEERS</title>
+  <link rel="icon" type="image/png" href="img/logo-Elood0.png" />
+  <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/font.css" />
+  <link rel="stylesheet" href="styles/app.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 200vh; 
+    background-color: hsl(var(--bg-hue, 200), 60%, 20%);
+    transition: background-color 0.3s ease;
+  }
+</style>
+
+<body>
+    
+     
+           
+   <header class="header_projects">
+    <nav class="navbar_projects">
+      <ul class="menu_projects">
+        <li class="menu_item_projects"><a class="menu_link_projects" href="index.html">
+          <img class="logoimag" src="img/svg/logoElood.svg" alt="E-lood Logo"></a></li>
+        <li class="menu_item_projects"><a class="menu_link_projects" href="#Therapeutic">Therapeutic</a></li>
+        <li class="menu_item_projects"><a class="menu_link_projects" href="#Industrial">Industrial</a></li>
+        <li class="menu_item_projects"><a class="menu_link_projects" href="#Residential">Residential</a></li>
+        <li class="menu_item_projects"><a class="menu_link_projects" href="#Administrative">Administrative</a></li>
+        <li class="menu_item_projects"><a class="menu_link_projects" href="#Service">Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Project Sections -->
+  <main>
+    <section id="Therapeutic" class="sec_projects1">
+      <div class="header-project">
+        <h2 class="project_title">Therapeutic Projects</h2>
+      </div>
+      <div class="main container" id="therapeutic-projects"></div>
+    </section>
+
+    <section id="Industrial" class="sec_projects1">
+      <div class="header-project">
+        <h2 class="project_title">Industrial Projects</h2>
+      </div>
+      <div class="main container" id="industrial-projects"></div>
+    </section>
+
+    <section id="Residential" class="sec_projects1">
+      <div class="header-project">
+        <h2 class="project_title">Residential Projects</h2>
+      </div>
+      <div class="main container" id="residential-projects"></div>
+    </section>
+
+    <section id="Administrative" class="sec_projects1">
+      <div class="header-project">
+        <h2 class="project_title">Administrative Projects</h2>
+      </div>
+      <div class="main container" id="administrative-projects"></div>
+    </section>
+
+    <section id="Service" class="sec_projects1">
+      <div class="header-project">
+        <h2 class="project_title">Service Projects</h2>
+      </div>
+      <div class="main container" id="service-projects"></div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+ <div id="glass" class="glass hidden">
+    <div class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <img id="modal-image" src="" alt="">
+      <p id="modal-caption" class="modal-caption"></p>
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+  </div>
+  <button id="elevatorBtn" class="elevator-btn" aria-label="Back to top">
+  <svg width="24" height="24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" 
+       class="feather feather-chevron-up">
+    <polyline points="18 15 12 9 6 15" />
+  </svg>
+</button>
+
+
+  
+
+
+
+
+
+
+ <script src="projects.js"></script>
+ 
+
+
+  
+
+</body>
+</html>
