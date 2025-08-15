@@ -652,7 +652,7 @@ transition: transform 1.5s cubic-bezier(0.33, 1, 0.68, 1),
 .about {
   width: 100%;
   height: 100vh;
-  background: url(/img/about-backgraund.jpg) no-repeat center center;
+  background: url(../img/backgraunds/about-backgraund.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
     opacity: 0;
@@ -665,7 +665,7 @@ transition: transform 1.5s cubic-bezier(0.33, 1, 0.68, 1),
 .departmen_background {
   width: 100%;
   height: 100vh;
-  background: url(/img/department-backgraund.jpg) no-repeat center center;
+  background: url(../img/backgraunds/department-backgraund.jpg) no-repeat center center;
   background-color: #ffffff;
   background-size: cover;
   position: relative;
@@ -851,9 +851,9 @@ transition: transform 1.5s cubic-bezier(0.33, 1, 0.68, 1),
 
   width: 100%;
   height: 100vh;
-  background: url(/img/Banner-portfolio.jpg) no-repeat center center;
+  background: url(../img/backgraunds/banner-portfolio.jpg) no-repeat center center;
   background-size: cover;
-   background-color: #111;
+  
   position: absolute;
   
 }
