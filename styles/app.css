@@ -297,6 +297,45 @@ html.visible {
    text-align: center;
    
 }
+/*
+======================
+Languege--header
+======================
+*/
+
+
+
+.submenu {
+  display: block;
+  position: absolute;
+ 
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  right: 0; 
+}
+
+
+.menu_item_about:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.flag {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.lang-link:hover .flag {
+  content: url("../img/flags/iranflag.svg");
+  transition: transform 0.3s ease;
+}
 
 
 
